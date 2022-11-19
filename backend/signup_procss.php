@@ -21,13 +21,13 @@
     }
     if (empty($makeid)) {
     ?>
-    <script>location.href = "index.php"</script>
+    <script>location.href = "/front/signup.php"</script>
     <?php
         exit;
     }
     if (empty($makepw)) {
     ?>
-    <script>location.href = "index.php"</script>
+    <script>location.href = "/front/signup.php"</script>
     <?php
         exit;
     }
@@ -37,7 +37,7 @@
     $sql3 = "SELECT email FROM user WHERE name='" . $_POST['makename'] . "'";
     $result1 = mysqli_query($conn, $sql1);
     $result2 = mysqli_query($conn, $sql2);
-    $result2 = mysqli_query($conn, $sql3);
+    $result3 = mysqli_query($conn, $sql3);
     $row1 = mysqli_num_rows($result1);
     $row2 = mysqli_num_rows($result2);
     $row3 = mysqli_num_rows($result3);
