@@ -21,8 +21,8 @@
       <input type="email" name="makeemail" placeholder="이메일을 입력해주세요" class="email">
       <button class="maker" id="maker" onclick="pushAll();">제출</button>
       <ul>
-        <li><a>아이디찾기</a></li>
-        <li><a>비밀번호찾기</a></li>
+        <li><a href="finid.html">아이디찾기</a></li>
+        <li><a href="findpw.html">비밀번호찾기</a></li>
       </ul>
     </div>
   </form>

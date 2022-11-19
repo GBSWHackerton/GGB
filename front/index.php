@@ -17,5 +17,30 @@
     <input type="password" name="pw" placeholder="비밀번호를 입력해주세요">
     <button type="submit" name="login">로그인</button>
   </form>
+
+  <script>
+            const pushAll= function(){
+                let userNewId = document.querySelector("#ID");
+                let userNewEmail = document.querySelector("#mail");
+                let userNewPw = document.querySelector("#PW");
+                
+                if(userNewId.value==""){
+                    alert("ID 를 입력해주세요.");
+                    document.getElementsByName("makeid").focus();
+                    
+                }
+                if(userNewEmail.value==""){
+                    alert("email을 입력해주세요.");
+                    document.getElementsByName("makeemail").focus();
+                
+                }
+                if(userNewPw.value == ""){
+                    alert("비밀번호를 입력해주세요.");
+                    document.getElementsByName("makepassword").focus();
+                
+                }
+            }
+  </script>
+
 </body>
 </html>
