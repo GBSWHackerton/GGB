@@ -12,13 +12,16 @@
 </head>
 <body>
   
+  <form action="/backend/signup_procss.php" method="post">
+
   <form action="../backend/findid.php" method="POST">
+
     <div class="form">
       <h2 class="header">회원가입</h2>
-      <input type="text" name="makename" placeholder="고객님의 성함을 입력해주세요" class="name">
-      <input type="text" name="makeid" placeholder="희망하시는 ID를 입력해주세요" class="id">
-      <input type="password" name="makepw" placeholder="비밀번호를 입력해주세요" class="pw">
-      <input type="email" name="makeemail" placeholder="이메일을 입력해주세요" class="email">
+      <input type="text" name="makename" placeholder="고객님의 성함을 입력해주세요" class="name" id="NAME">
+      <input type="text" name="makeid" placeholder="희망하시는 ID를 입력해주세요" class="id" id="ID">
+      <input type="password" name="makepw" placeholder="비밀번호를 입력해주세요" class="pw" id="PW">
+      <input type="email" name="makeemail" placeholder="이메일을 입력해주세요" class="email" id="mail">
       <button class="maker" id="maker" onclick="pushAll();">제출</button>
       <ul>
         <li><a href="finid.html">아이디찾기</a></li>
@@ -26,12 +29,12 @@
       </ul>
     </div>
   </form>
-
   <script>
             const pushAll= function(){
                 let userNewId = document.querySelector("#ID");
                 let userNewEmail = document.querySelector("#mail");
                 let userNewPw = document.querySelector("#PW");
+                let userNewName = document.querySelector("#NAME");
                 
                 if(userNewId.value==""){
                     alert("ID 를 입력해주세요.");
@@ -45,7 +48,12 @@
                 }
                 if(userNewPw.value == ""){
                     alert("비밀번호를 입력해주세요.");
-                    document.getElementsByName("makepassword").focus();
+                    document.getElementsByName("makepw").focus();
+                
+                }
+                if(userNewNAME.value == ""){
+                    alert("이름을 입력해주세요.");
+                    document.getElementsByName("makename").focus();
                 
                 }
             }
