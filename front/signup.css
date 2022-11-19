@@ -9,11 +9,13 @@ body{
 }
 
 input {
-  width: 170px;
+  width: 200px;
   height: 25px;
   display: block;
   padding: 2px 5px;
   margin: 0 auto;
+  border-radius: 10px;
+  border-color: #fff;
 }
 
 .form {
@@ -22,13 +24,18 @@ input {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 500px;
-  height: 400px;
+  height: 430px;
   background-color: rgb(194, 237, 255);
   border-radius: 15px;
 }
 
+.name {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
 .id {
-  margin-top: 50px;
+  margin-top: 30px;
   margin-bottom: 10px;
 }
 
@@ -47,7 +54,7 @@ input {
   margin: auto;
   width: 170px;
   height: 30px;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 .maker:hover {
@@ -58,4 +65,12 @@ input {
   color: #000;
   text-align: center;
   margin-top: 30px;
+}
+
+a {
+  color: gray;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  margin-top: 10px;
 }
