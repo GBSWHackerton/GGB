@@ -27,7 +27,7 @@
     <?php
         exit;
     }
-    $sql = "INSERT INTO user(id, password, email) VALUES('{$makeid}','{$makepw}','{$makeemail}')";
+    $sql = "INSERT INTO user(id, password, email) VALUES('{$makeid}','{$hashedPassword}','{$makeemail}')";
     $sql1 = "SELECT id FROM user WHERE id='" . $_POST['makeid'] . "'";
     $sql2 = "SELECT email FROM user WHERE email='" . $_POST['makeemail'] . "'";
     $result1 = mysqli_query($conn, $sql1);

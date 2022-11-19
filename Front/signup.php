@@ -11,7 +11,7 @@
   <title>signup</title>
 </head>
 <body>
-  <form action="/backend/login_procss.php" method="post">
+  <form action="/backend/signup_procss.php" method="post">
     <input type="text" name="makeid" placeholder="아이디를 입력해주세요">
     <input type="password" name="makepw" placeholder="비밀번호를 입력해주세요">
     <input type="email" name="makeemail" placeholder="이메일을 입력해주세요">
