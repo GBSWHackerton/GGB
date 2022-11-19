@@ -12,7 +12,7 @@
 </head>
 <body>
   
-  <form action="/backend/signup.php" method="post">
+  <form>
     <div class="form">
       <h2 class="header">회원가입</h2>
       <input type="text" name="makeid" placeholder="ID" class="id">
