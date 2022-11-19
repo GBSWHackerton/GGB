@@ -5,7 +5,7 @@
     $makepw = $_POST['makepw'];
     $makeemail = $_POST['makeemail'];
     $makename = $_POST['makename'];
-    $hashedPassword = password_hash($makepw, PASSWORD_DEFAULT);
+    $hashedPassword = base64_encode($makepw);
     SQLFiltering($makeid, $makepw,$makename);
     function SQLFiltering($makeid, $makepw,$makename)
     {

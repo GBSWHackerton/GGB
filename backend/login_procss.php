@@ -17,7 +17,7 @@
     $result = mysqli_query($conn, $sql);
     $row = mysqli_fetch_array($result);
     $hashedPassword = $row['password'];
-    $passwordResult = password_verify($password, $hashedPassword);
+    $passwordResult = base64_decode($hashedPassword) == $pw;
     if($passwordResult == true){
         session_start();
         $_SESSION['userid'] = $row['id'];
