@@ -20,8 +20,10 @@
       <input type="password" name="makepw" placeholder="비밀번호를 입력해주세요" class="pw">
       <input type="email" name="makeemail" placeholder="이메일을 입력해주세요" class="email">
       <button class="maker" id="maker" onclick="pushAll();">제출</button>
-      <a href="findid.html">아이디찾기</a>
-      <a href="findpw.html">비밀번호찾기</a>
+      <ul>
+        <li><a>아이디찾기</a></li>
+        <li><a>비밀번호찾기</a></li>
+      </ul>
     </div>
   </form>
 
