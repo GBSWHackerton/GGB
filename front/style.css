@@ -4,12 +4,58 @@
   font-family: 'Nanum Gothic Coding', monospace;
 }
 
-input { 
-  margin-top: 10px;
-  margin-left: 10px;
-  width: 200px;
+body{
+  background-color: #F5F5F5;
+}
+
+input {
+  width: 170px;
+  height: 25px;
+  display: block;
+  padding: 2px 5px;
+  margin: 0 auto;
+}
+
+.form {
+  position :absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height: 400px;
+  background-color: rgb(194, 237, 255);
+  border-radius: 15px;
+}
+
+.id {
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+
+.pw {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.email {
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 
 .maker {
-  width: 50px;
+  display: block;
+  margin: auto;
+  width: 170px;
+  height: 30px;
+  margin-top: 30px;
+}
+
+.maker:hover {
+  cursor: pointer;
+}
+
+.header {
+  color: #000;
+  text-align: center;
+  margin-top: 30px;
 }

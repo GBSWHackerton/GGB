@@ -8,14 +8,18 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap" rel="stylesheet">
-  <title>signup</title>
+  <title>Sign_up</title>
 </head>
 <body>
-  <form action="/backend/signup_procss.php" method="post">
-    <input type="text" name="makeid" placeholder="아이디를 입력해주세요">
-    <input type="password" name="makepw" placeholder="비밀번호를 입력해주세요">
-    <input type="email" name="makeemail" placeholder="이메일을 입력해주세요">
-    <button class="maker" id="maker" onclick="pushAll();">제출</button>
+  
+  <form>
+    <div class="form">
+      <h2 class="header">회원가입</h2>
+      <input type="text" name="makeid" placeholder="ID" class="id">
+      <input type="password" name="makepw" placeholder="Password" class="pw">
+      <input type="email" name="makeemail" placeholder="E-mail" class="email">
+      <button class="maker" id="maker" onclick="pushAll();">제출</button>
+    </div>
   </form>
 
   <script>
