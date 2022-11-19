@@ -38,7 +38,7 @@
     ?>
     <script>
         alert("이미 존재하는 아이디입니다. 다시 입력해주세요.");
-        location.href = "/front/index.php";
+        location.href = "/front/signup.php";
     </script>
     <?php
         exit;
@@ -47,7 +47,7 @@
     ?>
     <script>
         alert("이미 존재하는 이메일입니다. 다시 입력해주세요.");
-        location.href = "/front/index.php";
+        location.href = "/front/signup.php";
     </script>
     <?php
         exit;

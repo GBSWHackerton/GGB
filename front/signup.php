@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="style.css" rel="stylesheet">
+  <link href="signup.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap" rel="stylesheet">
@@ -12,7 +12,7 @@
 </head>
 <body>
   
-  <form>
+  <form action="/backend/signup.php" method="post">
     <div class="form">
       <h2 class="header">회원가입</h2>
       <input type="text" name="makeid" placeholder="ID" class="id">
