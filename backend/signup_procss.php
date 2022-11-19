@@ -17,29 +17,28 @@
     }
     if (empty($makeid)) {
     ?>
-    <script>location.href = "singup.php"</script>
+    <script>location.href = "signup.php"</script>
     <?php
         exit;
     }
     if (empty($makepw)) {
     ?>
-    <script>location.href = "singup.php"</script>
+    <script>location.href = "signup.php"</script>
     <?php
         exit;
     }
     $sql = "INSERT INTO user(id, password, email) VALUES('{$makeid}','{$makepw}','{$makeemail}')";
-    $result = mysqli_query($conn, $sql);
     $sql1 = "SELECT id FROM user WHERE id='" . $_POST['makeid'] . "'";
     $sql2 = "SELECT email FROM user WHERE email='" . $_POST['makeemail'] . "'";
     $result1 = mysqli_query($conn, $sql1);
     $result2 = mysqli_query($conn, $sql2);
-    $row1 = mysqli_num_rows($result);
+    $row1 = mysqli_num_rows($result1);
     $row2 = mysqli_num_rows($result2);
     if ($row1 > 0) {
     ?>
     <script>
         alert("이미 존재하는 아이디입니다. 다시 입력해주세요.");
-        location.href = "/front/singup.php";
+        location.href = "/front/signup.php";
     </script>
     <?php
         exit;
@@ -48,20 +47,21 @@
     ?>
     <script>
         alert("이미 존재하는 이메일입니다. 다시 입력해주세요.");
-        location.href = "/front/singup.php";
+        location.href = "/front/signup.php";
     </script>
     <?php
         exit;
     }
-    $result = mysqli_query($conn, $sql);
+    
     if ($result === false) {
         echo "저장에 문제가 생겼습니다. 관리자에게 문의해주세요.";
         echo mysqli_error($conn);
     } else {
+        $result = mysqli_query($conn, $sql);
     ?>
     <script>
         alert("회원가입이 완료되었습니다");
-        location.href = "/front/login.php"
+        location.href = "/front/login.php";
     </script>
     <?php
     }
