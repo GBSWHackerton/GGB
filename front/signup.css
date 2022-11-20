@@ -104,16 +104,3 @@ h2 {
       height: 41px;
   }
 }
-
-a {
-  color: #000;
-  text-decoration: none;
-  display: block;
-  text-align: center;
-  padding: 10px;
-  margin-top: 5px;
-}
-
-li {
-  list-style-type: none;
-}
