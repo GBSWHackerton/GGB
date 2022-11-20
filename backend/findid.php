@@ -1,7 +1,7 @@
 <?php
     //$conn=mysqli_connect("localhost","yusun2234sun1","sunlove8421!","yusun2234sun1");
     $conn = mysqli_connect('localhost', 'root', 'sunlove8421!', 'ggb');
-    $email = $_POST['findeemail'];
+    $email = $_POST['findemail'];
     $name = $_POST['findname'];
     function SQLFiltering($name, $email)
     {
@@ -26,6 +26,7 @@
         }
         $sqlemail = "SELECT id FROM user WHERE email = '{$email}'";
         $sqlname = "SELECT id FROM user WHERE name = '{$name}'";
+        
         $result1 = mysqli_query($conn,$sqlemail);
         $result2 = mysqli_query($conn,$sqlname);
         $row1 = mysqli_fetch_array($result1);
@@ -48,8 +49,8 @@
             <?php
             exit;
         }
+        echo "<script>alert('회원님의 ID는 ".$row2[0]." 입니다.');</script>";
         ?>
         <script>
-            alert("당신의 아이디는 <?php $result1 ?> 입니다");
             location.href="/front/login.php";
         </script>

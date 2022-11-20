@@ -1,9 +1,9 @@
 <?php
     //$conn=mysqli_connect("localhost","yusun2234sun1","sunlove8421!","yusun2234sun1");
     $conn = mysqli_connect('localhost', 'root', 'sunlove8421!', 'ggb');
-    $email = $_POST['findeemail'];
+    $email = $_POST['findemail'];
     $name = $_POST['findname'];
-    $id = $_POST['findeid'];
+    $id = $_POST['findid'];
     function SQLFiltering($name, $email,$id)
     {
         $name = preg_replace("/\s{1,}1\=(.*)+/", "", $name);
@@ -25,13 +25,13 @@
     }
     if (empty($email)) {
         ?>
-        <script>location.href = "/font/findid.html"</script>
+        <script>location.href = "/front/findid.html"</script>
         <?php
             exit;
     }
     if (empty($id)) {
         ?>
-        <script>location.href = "/font/findid.html"</script>
+        <script>location.href = "/front/findid.html"</script>
         <?php
             exit;
     }
@@ -70,9 +70,9 @@
             </script>
             <?php
             exit;
-        }
+        } 
+        echo "<script>alert('회원님의 비밀번호는 ".base64_decode($row2[0])." 입니다.');history.back();</script>";
         ?>
         <script>
-            alert("당신의 아이디는 <?php base64_decode($result1) ?> 입니다");
             location.href="/front/login.php";
         </script>

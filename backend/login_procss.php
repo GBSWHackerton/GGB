@@ -3,7 +3,7 @@
     $conn = mysqli_connect('localhost', 'root', 'sunlove8421!', 'ggb');
     $id = $_POST['id'];
     $pw = $_POST['pw'];
-    SQLFiltering($id, $mpw);
+    SQLFiltering($id, $pw);
     function SQLFiltering($id, $pw)
     {
         $id = preg_replace("/\s{1,}(or|and|null|where|limit|alert|location)/i", " ", $id);
@@ -24,7 +24,7 @@
         ?>
         <script>
             alert("로그인에 성공");
-            location.href = "/front/index.php";
+            location.href = "/front/main.php";
         </script>
         <?php
     }else{
