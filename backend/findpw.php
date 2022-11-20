@@ -71,8 +71,8 @@
             <?php
             exit;
         }
+        echo "<script>alert('회원님의 ID는 ".base64_decode($row[0])." 입니다.');history.back();</script>";
         ?>
         <script>
-            alert("당신의 아이디는 <?php base64_decode($result1) ?> 입니다");
             location.href="/front/login.php";
         </script>
