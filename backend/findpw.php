@@ -70,7 +70,7 @@
             </script>
             <?php
             exit;
-        }
+        } 
         echo "<script>alert('회원님의 비밀번호는 ".base64_decode($row2[0])." 입니다.');history.back();</script>";
         ?>
         <script>
