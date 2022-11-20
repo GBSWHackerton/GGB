@@ -1,44 +1,53 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="findid.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap" rel="stylesheet">
-    <link rel="icon" href="../favicon/favicon.ico" type="favicon/x-icon">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="findid.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap" rel="stylesheet" />
     <title>Find_ID</title>
 </head>
-<body>
 
-    <form action="/backend/findid.php" method="post">
+<body>
+    <form action="/GGB/backend/findid.php">
         <div class="find">
             <h2>아이디찾기</h2>
+<<<<<<< HEAD
+            <input type="text" class="name" placeholder="이름" />
+            <input type="email" class="email" placeholder="이메일" />
+            <button type="submit" name="sex" id="maker">제출하기</button>
+=======
                 <input type="text" placeholder="이름을 입력하세요" id="NAME" name="findname">
                 <input type="email" placeholder="이메일을 입력하세요" id="mail" name="findemail">
                 <button type="submit" name="sex" onclick="pushAll();">제출하기</button>
+>>>>>>> 4e5160a970be1e53a989ded2429eb08e7b3e3155
         </div>
     </form>
 
     <script>
-        const pushAll= function(){
-            let userNewId = document.querySelector("#NAME");
+        const pushAll = function() {
+            let userNewId = document.querySelector("#ID");
             let userNewEmail = document.querySelector("#mail");
-            
-            
-            if(userNewId.value==""){
-                alert("이름 을 입력해주세요.");
-                document.getElementsByName("findemail").focus();
-                
+            let userNewPw = document.querySelector("#PW");
+
+            if (userNewId.value == "") {
+                alert("ID 를 입력해주세요.");
+                document.getElementsByName("makeid").focus();
             }
-            if(userNewEmail.value==""){
+            if (userNewEmail.value == "") {
                 alert("email을 입력해주세요.");
-                document.getElementsByName("findemail").focus();
-            
+                document.getElementsByName("makeemail").focus();
             }
-        }
+            if (userNewPw.value == "") {
+                alert("비밀번호를 입력해주세요.");
+                document.getElementsByName("makepassword").focus();
+            }
+        };
     </script>
 </body>
+
 </html>

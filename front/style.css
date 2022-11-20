@@ -1,60 +1,19 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Nanum Gothic Coding', monospace;
+  font-family: "Nanum Gothic Coding", monospace;
+  transition: all 0.3s;
 }
 
-body{
-  background-color: rgb(190, 190, 190);
-}
-
-form {
-  background-color: rgb(194, 237, 255);
-  width: 450px;
-  height: 400px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  border-radius: 20px;
-}
-
-input {
-  display: block;
-  margin-bottom: 20px;
-  width: 200px;
-  height: 35px;
-  margin-left: 130px;
-  margin-top: 25px;
-  border-radius: 10px;
-  border-color: none;
-}
-
-button {
-  width: 200px;
-  height: 40px;
-  display: block;
-  margin: 30px 129px;
-  border-radius: 10px;
-}
-
-h2 {
-  text-align: center;
-  padding: 30px;
-  margin-top: 15px;
-}
-
-button:hover {
-  cursor: pointer;
-  width: 202px;
-  height: 42px;
+body {
+  background-color: #f5f5f5;
 }
 
 a {
   color: #000;
   text-decoration: none;
   padding: 10px;
-  margin-top: 5px;
+  margin-top: 15px;
 }
 
 li {
@@ -66,4 +25,91 @@ li {
 
 ul {
   text-align: center;
+}
+
+form {
+  background-color: rgb(194, 237, 255);
+  width: 450px;
+  height: 420px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 8px;
+}
+
+.Form {
+  margin: 0 auto;
+}
+
+input {
+  padding: 0px 3px;
+  display: block;
+  margin-bottom: 20px;
+  width: 200px;
+  height: 35px;
+  margin: 0 auto;
+  border: 1px solid black;
+  border-radius: 8px;
+}
+
+.id {
+  margin-top: 25px;
+  padding: 0 5px;
+}
+
+.pw {
+  margin-top: 25px;
+  padding: 0 5px;
+}
+
+#maker {
+  width: 200px;
+  height: 40px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px;
+  margin-top: 50px;
+  border: 1px solid black;
+}
+
+h2 {
+  text-align: center;
+  padding: 30px;
+  margin-top: 15px;
+}
+
+#maker:hover {
+  cursor: pointer;
+  width: 203px;
+  height: 43px;
+}
+
+@media screen and (max-width: 1280px) {
+  form {
+      border-radius: 0px;
+      width: 100%;
+      height: 100%;
+  }
+  .Form {
+      position: relative;
+      top: 25%;
+  }
+  .id {
+      width: 70%;
+      height: 40px;
+  }
+  .pw {
+      width: 70%;
+      height: 40px;
+  }
+  #maker {
+      width: 30%;
+      height: 40px;
+  }
+  #maker:hover {
+      cursor: pointer;
+      width: 31%;
+      height: 41px;
+  }
 }
