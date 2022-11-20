@@ -5,7 +5,7 @@
 }
 
 body{
-  background-color: #F5F5F5;
+  background-color: rgb(190, 190, 190);
 }
 
 form {
@@ -48,4 +48,22 @@ button:hover {
   cursor: pointer;
   width: 202px;
   height: 42px;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+  padding: 10px;
+  margin-top: 5px;
+}
+
+li {
+  text-align: center;
+  list-style-type: none;
+  justify-content: space-between;
+  display: inline-flex;
+}
+
+ul {
+  text-align: center;
 }
