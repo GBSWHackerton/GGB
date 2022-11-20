@@ -12,11 +12,11 @@
     <title>Find_pw</title>
 </head>
 <body>
-    <form>
+    <form action="/backend/findpw.php" method="post">
         <h2>비밀번호 찾기</h2>
-        <input type="text" name="findname" placeholder="이름">
-        <input type="text" name="findid" placeholder="아아디">
-        <input type="email" name="findemail" placeholder="이메일">
+        <input type="text" name="findname" placeholder="이름" id="NAME">
+        <input type="text" name="findid" placeholder="아아디" id="ID">
+        <input type="email" name="findemail" placeholder="이메일" id="email">
         <button class="maker" id="maker" onclick="pushAll();">제출</button>
     </form>
 
@@ -24,21 +24,21 @@
         const pushAll= function(){
             let userNewId = document.querySelector("#ID");
             let userNewEmail = document.querySelector("#mail");
-            let userNewPw = document.querySelector("#PW"); 
+            let userNewPw = document.querySelector("#NAME"); 
             
             if(userNewId.value==""){
                 alert("ID 를 입력해주세요.");
-                document.getElementsByName("makeid").focus();
+                document.getElementsByName("findid").focus();
                 
             }
             if(userNewEmail.value==""){
                 alert("email을 입력해주세요.");
-                document.getElementsByName("makeemail").focus();
+                document.getElementsByName("findemail").focus();
             
             }
             if(userNewPw.value == ""){
-                alert("비밀번호를 입력해주세요.");
-                document.getElementsByName("makepassword").focus();
+                alert("이름을 입력해주세요.");
+                document.getElementsByName("findname").focus();
             
             }
         }
