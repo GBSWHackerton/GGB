@@ -12,34 +12,29 @@
 </head>
 <body>
 
-    <form>
+    <form action="/backend/findid.php" method="post">
         <div class="find">
             <h2>아이디찾기</h2>
-                <input type="text" placeholder="이름을 입력하세요">
-                <input type="email" placeholder="이메일을 입력하세요">
-                <button type="submit" name="sex">제출하기</button>
+                <input type="text" placeholder="이름을 입력하세요" id="NAME" name="findname">
+                <input type="email" placeholder="이메일을 입력하세요" id="mail" name="finemail">
+                <button type="submit" name="sex" onclick="pushAll();">제출하기</button>
         </div>
     </form>
 
     <script>
         const pushAll= function(){
-            let userNewId = document.querySelector("#ID");
+            let userNewId = document.querySelector("#NAME");
             let userNewEmail = document.querySelector("#mail");
-            let userNewPw = document.querySelector("#PW");
+            
             
             if(userNewId.value==""){
-                alert("ID 를 입력해주세요.");
-                document.getElementsByName("makeid").focus();
+                alert("이름 을 입력해주세요.");
+                document.getElementsByName("findemail").focus();
                 
             }
             if(userNewEmail.value==""){
                 alert("email을 입력해주세요.");
-                document.getElementsByName("makeemail").focus();
-            
-            }
-            if(userNewPw.value == ""){
-                alert("비밀번호를 입력해주세요.");
-                document.getElementsByName("makepassword").focus();
+                document.getElementsByName("findemail").focus();
             
             }
         }

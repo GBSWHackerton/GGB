@@ -20,7 +20,7 @@
         }
         if (empty($email)) {
         ?>
-        <script>location.href = "/font/findid.html"</script>
+        <script>location.href = "/front/findid.html"</script>
         <?php
             exit;
         }
@@ -34,7 +34,7 @@
             ?>
             <script>
                 alert("입련된 이메일로 가입된 이메일 존재하지 않습니다");
-                location.href="/fornt/findid.html";
+                location.href="/front/findid.html";
             </script>
             <?php
             exit;
@@ -43,7 +43,7 @@
             ?>
             <script>
                 alert("입련된 이름으로 가입된 아이디가 존재하지 않습니다");
-                location.href="/fornt/findid.html";
+                location.href="/front/findid.html";
             </script>
             <?php
             exit;

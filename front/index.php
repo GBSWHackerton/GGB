@@ -13,30 +13,24 @@
 <body>
   <form action="../backend/login_procss.php" method="POST">
     <h2>로그인</h2>
-    <input type="text" name="id" placeholder="아이디를 입력해주세요">
-    <input type="password" name="pw" placeholder="비밀번호를 입력해주세요">
-    <button type="submit" name="login">로그인</button>
+    <input type="text" name="id" placeholder="아이디를 입력해주세요" id="ID">
+    <input type="password" name="pw" placeholder="비밀번호를 입력해주세요" id="PW">
+    <button type="submit" name="login" onclick="pushAll();">로그인</button>
   </form>
 
   <script>
             const pushAll= function(){
                 let userNewId = document.querySelector("#ID");
-                let userNewEmail = document.querySelector("#mail");
                 let userNewPw = document.querySelector("#PW");
                 
                 if(userNewId.value==""){
                     alert("ID 를 입력해주세요.");
-                    document.getElementsByName("makeid").focus();
+                    document.getElementsByName("id").focus();
                     
-                }
-                if(userNewEmail.value==""){
-                    alert("email을 입력해주세요.");
-                    document.getElementsByName("makeemail").focus();
-                
                 }
                 if(userNewPw.value == ""){
                     alert("비밀번호를 입력해주세요.");
-                    document.getElementsByName("makepassword").focus();
+                    document.getElementsByName("pw").focus();
                 
                 }
             }
