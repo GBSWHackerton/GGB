@@ -8,19 +8,23 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap" rel="stylesheet">
-  <link rel="icon" href="../favicon/favicon.ico" type="favicon/x-icon">
   <title>Sign_up</title>
 </head>
 <body>
   
   <form action="/backend/signup_procss.php" method="post">
-    <div class="form">
+
+    <div class="Form">
       <h2 class="header">회원가입</h2>
-      <input type="text" name="makename" placeholder="고객님의 성함을 입력해주세요" class="name" id="NAME">
-      <input type="text" name="makeid" placeholder="희망하시는 ID를 입력해주세요" class="id" id="ID">
-      <input type="password" name="makepw" placeholder="비밀번호를 입력해주세요" class="pw" id="PW">
-      <input type="email" name="makeemail" placeholder="이메일을 입력해주세요" class="email" id="mail">
+      <input type="text" name="makename" placeholder="이름" class="name" id="NAME">
+      <input type="text" name="makeid" placeholder="아이디" class="id" id="ID">
+      <input type="password" name="makepw" placeholder="비밀번호" class="pw" id="PW">
+      <input type="email" name="makeemail" placeholder="이메일" class="email" id="mail">
       <button class="maker" id="maker" onclick="pushAll();">제출</button>
+      <ul>
+        <li><a href="finid.html" class="FID">아이디 찾기</a></li>
+        <li><a href="findpw.html" class="FPWD">비밀번호 찾기</a></li>
+      </ul>
     </div>
   </form>
   <script>

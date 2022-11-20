@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: 'Nanum Gothic Coding', monospace;
 }
 
 body {
@@ -12,8 +13,8 @@ input {
 }
 
 form {
-  background-color: rgb(194, 237, 255);
-  width: 500px;
+  background-color: skyblue;
+  width: 400px;
   height: 400px;
   position: absolute;
   left:50%;
