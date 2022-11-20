@@ -4,7 +4,7 @@
     $conn = mysqli_connect('localhost', 'root', 'sunlove8421!', 'ggb');
     $userid = $_SESSION['userid'];
     $money = $_POST['makemoney'];
-    $date = date("Y-m-d");
+    $date = date("m-d");
     $checksql = "SHOW TABLE STATUS WHERE name='{$userid}'";
     $checkresult = mysqli_query($conn,$checksql);
     $row1 = mysqli_fetch_array($checkresult);
