@@ -52,5 +52,5 @@
         echo "<script>alert('회원님의 ID는 ".$row2[0]." 입니다.');</script>";
         ?>
         <script>
-            location.href="/front/login.php";
+            location.href="/front/index.php";
         </script>
