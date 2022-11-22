@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+.make {
+  width: 500px;
+  height: 300px;
+  border: 1px solid black;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.input {
+  width: 500px;
+  height: 300px;
+  border: 1px solid black;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.left {
+  width: 50%;
+  height: 100vh;
+  background-color: yellow;
+}
+
+.right {
+  position: absolute;
+  right: 0%;
+  bottom: 0%;
+  width: 50%;
+  height: 100vh;
+  background-color: green;
+}
