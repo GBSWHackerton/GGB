@@ -9,8 +9,9 @@
     $checkresult = mysqli_query($conn,$checksql);
     $row1 = mysqli_fetch_array($checkresult);
     if($row1>0){
-        echo "<script>alert('이미 가계부가 존재합니다')</script>";
-        echo "location.href='/front/main.html'";
+        echo "<script>alert('이미 가계부가 존재합니다');
+        location.href='/front/main.html'
+        </script>";
         exit;
     }
     $sql = "CREATE TABLE {$userid}(
