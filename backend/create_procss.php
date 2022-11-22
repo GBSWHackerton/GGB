@@ -26,8 +26,10 @@
         exit;
     }
     $sql = "CREATE TABLE {$userid}(
-        money VARCHAR(50),
-        da DATE
+        money INT(50) NOT NULL,
+        da DATE NOT NULL,
+        because VARCHAR(50),
+        no INT IDENTITY (1, 1) NOT NULL
         );";
     $sql1 = "INSERT INTO {$userid}(money,da) VALUES('{$money}','{$date}')";
     $result = mysqli_query($conn,$sql);
