@@ -20,6 +20,7 @@
       <ul>
         <li><a href="finid.html" class="FID">아이디 찾기</a></li>
         <li><a href="findpw.html" class="FPWD">비밀번호 찾기</a></li>
+        <li><a href="signup.php">회원가입</a></li>
       </ul>
     </div>
   </form>
