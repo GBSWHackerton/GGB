@@ -1,0 +1,54 @@
+* {
+  font-family: 'Nanum Gothic Coding', monospace;
+  margin: 0;
+  padding: 0;
+}
+
+input {
+  font-family: 'IBM Plex Sans KR', sans-serif;
+  padding: 3px;
+}
+
+#input1 {
+  width: 250px;
+  height: 30px;
+  border-left: none;
+  border-top: none;
+  border-right: none;
+  border-bottom: 3px solid rgba(0, 0, 0, 0.5);
+  margin-top: 80px;
+  margin-left: 20px;
+}
+#input1:focus {
+  transition: all .3s;
+  border-bottom: 3px solid black;
+}
+
+#input2{
+  width: 80px;
+  height: 40px;
+  border-left: none;
+  border-top: none;
+  border-right: none;
+  margin-left: 10px;
+}
+#input2:hover {
+  border: 3px solid black;
+  background-color: #fefefe;
+}
+
+.input_bg {
+  background-color: skyblue;
+  width: 400px;
+  height: 300px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 3px solid black;
+}
+
+h2 {
+  margin-top: 30px;
+  text-align: center;
+}

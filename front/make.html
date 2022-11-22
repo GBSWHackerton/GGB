@@ -4,12 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>가계부 만들기 </title>
+    <link rel="stylesheet" href="make.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@200&display=swap" rel="stylesheet">
+    <title>가계부 만들기</title>
 </head>
 <body>
-    <form action="/backend/create_procss.php" method="post">
-        <input type="text" name="makemoney" placeholder="기본 돈을 입력해주세요">
-        <input type="submit" value="전송">
-    </form>
+    <div class="input_bg">
+        <h2>현재 자본을 입력해주세요!</h2>
+            <form action="/backend/create_procss.php" method="post">
+                <input type="text" name="makemoney" placeholder="현재 자금을 입력해주세요" id="input1">
+                <input type="submit" value="전송" id="input2">
+            </form>
+    </div>
 </body>
 </html>
