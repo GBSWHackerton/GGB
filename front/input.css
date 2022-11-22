@@ -1,0 +1,10 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Nanum Gothic Coding', monospace;
+}
+
+form > input {
+  width: 200px;
+  height: 17px;
+}
