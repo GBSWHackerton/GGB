@@ -12,16 +12,25 @@
   <title>값 넣는곳</title>
 </head>
 <body>
-  <form action="../backend/insert_minus_process.php" method="post">
-    <input type="text" name="price" placeholder="사용 한 값을 입력해주세요">
-    <input type="text" name="menu" placeholder="사용 사유를 입력해주세요">
-    <button>전송</button>
-  </form>
-  <form action="../backend/insert_plus_process.php" method="post">
-    <input type="text" name="price" placeholder="얻은 돈을 입력해주세요">
-    <input type="text" name="menu" placeholder="이유를 입력해주세요">
-    <button>전송</button>
-  </form>
+    <div class="first">
+      <div class="first_input">
+        <form action="../backend/insert_minus_process.php" method="post">
+          <input type="text" name="price" placeholder="사용 한 값을 입력해주세요" id="first">
+          <input type="text" name="menu" placeholder="사용 사유를 입력해주세요" id="second">
+          <button>전송</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="second">
+      <div class="second_input">
+        <form action="../backend/insert_plus_process.php" method="post">
+          <input type="text" name="price" placeholder="얻은 돈을 입력해주세요" id="third">
+          <input type="text" name="menu" placeholder="이유를 입력해주세요" id="four">
+          <button>전송</button>
+        </form>
+      </div>
+    </div>
   
   </body>
-</html>
+</html> 
