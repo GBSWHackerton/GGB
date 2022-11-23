@@ -1,40 +1,49 @@
 * {
   margin: 0;
   padding: 0;
+  transition: all 0.2s;
 }
 
 a {
-  color: #000;
   text-decoration: none;
-}
-
-.make {
-  width: 500px;
-  height: 300px;
-  border: 1px solid black;
+  color: black;
   text-align: center;
-  margin: 0 auto;
-}
-
-.input {
-  width: 500px;
-  height: 300px;
-  border: 1px solid black;
-  text-align: center;
-  margin: 0 auto;
 }
 
 .left {
-  width: 50%;
-  height: 100vh;
-  background-color: yellow;
+  width: 150px;
+  padding: 100px 100px;
+  border: 1px solid black;
+  border-radius: 25px;
+  float: left;
+  margin-top: 250px;
+  margin-left: 150px;
 }
 
 .right {
-  position: absolute;
-  right: 0%;
-  bottom: 0%;
-  width: 50%;
-  height: 100vh;
-  background-color: green;
+  width: 150px;
+  padding: 100px 100px;
+  border: 1px solid black;
+  border-radius: 25px;
+  float: right;
+  margin-top: 250px;
+  margin-right: 150px;
+}
+
+.left:hover {
+  font-size: 20px;
+  width: 150px;
+  padding: 120px 120px;
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAbFBMVEX///8AAAD8/PwuLi69vb2ZmZlRUVHs7Oza2trm5uYLCwu2trby8vL19fWioqLAwMCBgYFeXl41NTV3d3fS0tIiIiI9PT2oqKjJycmIiIiurq7Z2dkoKChGRkbi4uJjY2OQkJAZGRlNTU0jIyPscPIEAAAC8ElEQVR4nO3d21IaQRSFYY4CchhAQExiPOT93zGhzMUApXa79qyZdP7/kgvcXyHFUPR093pfa9CNvjj957z7zXbYiR7vdk0AZ9t+h3qIBw5u20adNw4XPrRNumwRLdy3LbpsHgxctA26KvrfdNI26CqECBG2X5PCVTVqqergEf4Mfu6MbjzCafBzZ4RQCKEphEIITSEUQmgKoRBCUwiFEJpCKITQFEIhhKYQCiE0hVAIoSmEQghNIRRCaAqhUH3VVxm/409H87Pua8Lx20OjWcjQWYUJdz/6Kb3aX80oYZXka+MtGSTMWGk5DJs9rSDhKl3YP4YNn1SQ8ClDGL/c+sOChDfvg65qYM184miKcJ0h/BY2fFJBwmOGcBI2fFJRnxbpb8TnmMGTixIuN4nAddTkqcVdtVWbl9vzaq6/j+ybufvowxq88l7WhGVceV9W/rcnhKYQCiE0hVAIoSmEQghNIRRCaAqhEEJTCIUQmkIohNAUQiGEphAKITSFUAihKYRCCE0hFEJoCqEQQlMIM1rOztvVhMfJ22ON7Y3+fmHCxTrlhovt2G6MEs5eEnynDm5ikHCQdsfMqZuw2dMKEs6Tgf3+97DhkwoS3mUIV2HDJxUkfM0Q/pv3W5T/Gpb/PhwMk4GbsNnT4vMwueKvaXrlX5deV953i8sQmkIohNAUQiGEphAKITSFUAihKYRCCE0hFEJoCqEQQlMIhRCaQiiE0BRCIYSmEAohNIVQCKEphEIITSEUKm4f4VHhe0GXv5938Xuyl7+vfvlnI5R/vkX5Z5SUf85M+WcFZZz35L684cyujFLOXTN/Fp7i7Dyh8r89ITSFUAihKYRCCE0hFEJoCqEQQlMIhRCaQiiE0BRCIYSmEAohNIVQCKEphEIITSEU+r+E5f+Ov6pGLVUdPMJuhBAhwvZrctVXNwpfu7tvW3TZPFqYs7zd0iJauPz8b1prYEP/6a+2UfWe44F/XsXVZjvsRI/N3XE16EYJk/4GyW1K3I4oUPUAAAAASUVORK5CYII=");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.right:hover {
+  font-size: 20px;
+  width: 150px;
+  padding: 120px 120px;
+  background-image: url("https://inform.uconn.edu/wp-content/uploads/sites/3070/2020/08/academic-integrity.png");
+  background-repeat: no-repeat;
+  background-position: center;
 }
