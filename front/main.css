@@ -1,32 +1,86 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Nanum Gothic Coding', monospace;
-}
-
-.go_chart {
-  text-align: center;
-  width: 300px;
-  height: 200px;
-  border: 1px solid black;
-}
-
-.make_ggb {
-  text-align: center;
-  width: 300px;
-  height: 200px;
-  border: 1px solid black;
-}
-
-.go_chart, .make_ggb {
-  float: left;
+  font-family: "Nanum Gothic Coding", monospace;
+  transition: all 0.3s;
 }
 
 body {
-  background-image: linear-gradient(to right, red 50%, blue 50%);
+  background-color: rgb(198, 244, 244);
 }
 
-#sex {
-  color: #000;
-  text-decoration: none;
+.wrap {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
 }
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+
+/* 그래프 보러가기 디자인 */
+
+.go_chart {
+  transform: translate(-150%, 50%);
+}
+
+.graph {
+  border: 1px solid black;
+  border-radius: 9px;
+  padding: 30px 20px;
+}
+
+.graph:hover {
+  background-image: url("https://img1.daumcdn.net/thumb/R1280x0.fjpg/?fname=http://t1.daumcdn.net/brunch/service/user/9lsS/image/m-w8FpKXmi2HqvWdeyIwJzTOVF8");
+  background-position: center;
+  padding: 35px 25px;
+}
+
+
+/* 가계부 보러가기 디자인 */
+
+.make_ggb {
+  transform: translate(150%, 50%);
+}
+
+.make {
+  border: 1px solid black;
+  border-radius: 9px;
+  padding: 30px 20px;
+}
+
+.make:hover {
+  background-image: url("https://us.123rf.com/450wm/vladvm/vladvm1507/vladvm150701311/42633422-%EB%8C%80%EC%9E%A5%EA%B0%84%EC%9D%98-%EC%95%84%EC%9D%B4%EC%BD%98%EC%9E%85%EB%8B%88%EB%8B%A4-%ED%8F%AC%EC%A7%80%EC%99%80-%EB%AA%A8%EB%A3%A8-%EB%8C%80%EC%9E%A5%EC%9E%A5%EC%9D%B4-%EA%B8%B0%ED%98%B8%EC%9E%85%EB%8B%88%EB%8B%A4-%ED%8F%89%EB%A9%B4-%EB%B2%A1%ED%84%B0-%EC%9D%BC%EB%9F%AC%EC%8A%A4%ED%8A%B8-%EB%A0%88%EC%9D%B4-%EC%85%98.jpg");
+  background-position: center;
+  background-size: cover;
+  padding: 35px 25px;
+}
+
+
+/* 아이콘 */
+
+.material-icons:nth-child(1) {
+  position: absolute;
+  top: -30%;
+  left: 141.2%;
+  font-size: 40px;
+  color: rgb(165, 165, 165);
+  opacity: 0.3;
+}
+
+.material-icons:nth-child(2) {
+  position: absolute;
+  top: -30%;
+  left: -59%;
+  font-size: 40px;
+  color: rgb(165, 165, 165);
+  opacity: 0.3;
+}
+
+
+/* 반응형 */
