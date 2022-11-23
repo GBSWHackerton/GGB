@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Nanum Gothic Coding", monospace;
+}
+
+body {
+  background-color: rgb(210, 210, 210);
+}
+
+form>input {
+  position: relative;
+  top: 100px;
+  width: 300px;
+  height: 50px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  font-size: 15px;
+  padding: 0px 10px;
+  border: 1px solid black;
+  border-radius: 30px;
+}
+
+button {
+  width: 300px;
+  height: 50px;
+  display: block;
+  margin: 0 auto;
+  background-color: whitesmoke;
+  border: 1px solid black;
+  border-radius: 20px;
+  position: relative;
+  top: 120px;
+  width: 300px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.first {
+  width: 50%;
+  height: 100vh;
+  float: left;
+}
+
+.second {
+  width: 50%;
+  height: 100vh;
+  float: left;
+}
+
+.first_input {
+  width: 500px;
+  height: 500px;
+  margin: 240px auto;
+  background-color: #bffdff;
+}
+
+.second_input {
+  width: 500px;
+  height: 500px;
+  background-color: #bffdff;
+  margin: 240px auto;
+}
+
+#first,
+#second,
+#third,
+#four {
+  background-color: #fff;
+  border: 2px solid black;
+}

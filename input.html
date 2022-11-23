@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="input.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap" rel="stylesheet">
+  <link rel="icon" href="../favicon/favicon.ico" type="favicon/x-icon">
+  <title>값 넣는곳</title>
+</head>
+<body>
+    <div class="first">
+      <div class="first_input">
+        <form action="../backend/insert_minus_process.php" method="post">
+          <input type="text" name="price" placeholder="사용 한 값을 입력해주세요" id="first">
+          <input type="text" name="menu" placeholder="사용 사유를 입력해주세요" id="second">
+          <button>전송</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="second">
+      <div class="second_input">
+        <form action="../backend/insert_plus_process.php" method="post">
+          <input type="text" name="price" placeholder="얻은 돈을 입력해주세요" id="third">
+          <input type="text" name="menu" placeholder="이유를 입력해주세요" id="four">
+          <button>전송</button>
+        </form>
+      </div>
+    </div>
+  
+  </body>
+</html> 
