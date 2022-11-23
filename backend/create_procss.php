@@ -15,7 +15,7 @@
     $conn = mysqli_connect('localhost', 'root', 'sunlove8421!', 'ggb');
     $userid = $_SESSION['userid'];
     $money = $_POST['makemoney'];
-    $date = date("m-d");
+    $date = date("y-m-d");
     $checksql = "SHOW TABLE STATUS WHERE name='{$userid}'";
     $checkresult = mysqli_query($conn,$checksql);
     $row1 = mysqli_fetch_array($checkresult);
@@ -29,9 +29,13 @@
         money INT(50) NOT NULL,
         da DATE NOT NULL,
         because VARCHAR(50),
-        no INT IDENTITY (1, 1) NOT NULL
+        no int auto_increment primary key
         );";
     $sql1 = "INSERT INTO {$userid}(money,da) VALUES('{$money}','{$date}')";
-    $result = mysqli_query($conn,$sql);
+    $result = mysqli_query($conn,$sql); 
     $result1 = mysqli_query($conn,$sql1);
 ?>
+<script>
+    alert("가계부가 생성되었습니다");
+    location.href="/front/main.html";
+</script>
