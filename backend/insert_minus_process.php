@@ -6,18 +6,26 @@
     $price = (int)$_POST['price'];
     $tablename = $_SESSION['userid'];
     $date = date("y-m-d");
-    $moneysql = "SELECT money FROM {$tablename} WHERE no='1'";
-    $result = mysqli_query($conn,$moneysql);
-    $row = mysqli_fetch_array($result);
-    while($row){
-        $ez = array($row['money']);
+    $nosql = "SELECT no FROM {$tablename}";
+    $result2 = mysqli_query($conn,$nosql);
+    while($row1 = mysqli_fetch_array($result2) ){
+        $sz = array($row1['no']);
     }
-    echo $ez[0];
-    $intresult = (int)$ez[0];
+    (int)$max_int_v = (int)max($sz);
+    $moneysql = "SELECT money FROM {$tablename} WHERE no = {$max_int_v}";
+    $moneyresult = mysqli_query($conn,$moneysql);
+    while($row = mysqli_fetch_array($moneyresult)){
+        $ez = array($row['money']);
+        break;
+    }
+    $intresult = $ez[0];
     $intprice = (int)$price;
-    echo $intresult;
     $resultprice = $intresult-$intprice;
     $sql = "INSERT INTO {$tablename}(money,da,because) VALUES('{$resultprice}','{$date}','{$how}')";
     $result1 = mysqli_query($conn,$sql);
 
 ?>
+<script>
+    alert("성공적으로 실행 되었습니다");
+    location.href="/front/main.html";
+</script>
