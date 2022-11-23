@@ -24,24 +24,9 @@
             <a href="graph.html" id="graph" class="graph">그래프 보러가기</a>
         </div>
         <div class="make_ggb">
-            <a href="#" id="make" class="make">가계부 만들기</a>
+            <a href="ggb.html" id="make" class="make">가계부 만들기</a>
         </div>
     </div>
-    <script>
-        const pushAll = function() {
-            let userNewId = document.querySelector("#ID");
-            let userNewPw = document.querySelector("#PW");
-
-            if (userNewId.value == "") {
-                alert("ID 를 입력해주세요.");
-                document.getElementsByName("id").focus();
-            }
-            if (userNewPw.value == "") {
-                alert("비밀번호를 입력해주세요.");
-                document.getElementsByName("pw").focus();
-            }
-        };
-    </script>
 </body>
 
 </html>
